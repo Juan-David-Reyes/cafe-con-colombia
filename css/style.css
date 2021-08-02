@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Adelle Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Adelle Bold'), url('/fonts/Adelle_Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Adelle Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Adelle Bold Italic'), url('/fonts/Adelle_BoldItalic.woff') format('woff');
+}
+:root{
+    --color-pri: #FAFAFA;
+}
+*{
+    font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #282828;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+    font-family: 'Adelle Bold Italic', sans-serif;
+}
+img,picture,span,i{
+    display: inline-block;
+}
