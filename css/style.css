@@ -27,6 +27,15 @@
     --font_serif_medium: 'Adelle Medium', sans-serif;
     --font_serif_bold_italic: 'Adelle Bold Italic', sans-serif;
     --txt_shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+
+    /* CATEGORIAS */
+
+    --cat-cultura: #0043a7;
+    --cat-gastronimia: #f86402;
+    --cat-arte: #F8C802;
+    --cat-costumbres: #00BD57;
+    --cat-historia: #F30B2C;
+    --cat-literatura: #aa02f8;
 }
 *{
     font-family: Helvetica, sans-serif;
@@ -462,7 +471,7 @@ section.section_blog{
     align-items: center;
     border-radius: 8px;
     overflow: hidden;
-    /* transition: 300ms ease all; */
+    transition: 300ms ease all;
 }
 .categorias_blog .cat_blog::before{
     content: '';
@@ -475,7 +484,8 @@ section.section_blog{
     margin: auto;
     z-index: 2;
     border-radius: 8px;
-    /* transition: 300ms ease all; */
+    opacity: 1;
+    transition: 300ms ease all;
 }
 .categorias_blog .cat_blog img{
     position: absolute;
@@ -494,28 +504,28 @@ section.section_blog{
 .categorias_blog .cat_blog.arte:hover::before{
     mix-blend-mode: normal;
     opacity: .8;
-    background: #F8C802;
+    background: var(--cat-arte);
     transition: 300ms ease all;
 }
 .categorias_blog .cat_blog.cultura:hover::before{
-    background: #0043a7;
+    background: var(--cat-cultura);
     mix-blend-mode: normal;
     opacity: .8;
     transition: 300ms ease all;
 }
 .categorias_blog .cat_blog.costumbres:hover::before{
-    background: #00BD57;
+    background: var(--cat-costumbres);
     mix-blend-mode: normal;
     opacity: .8;
 }
 .categorias_blog .cat_blog.gastronomia:hover::before{
-    background: #F802B3;
+    background: var(--cat-gastronimia);
     mix-blend-mode: normal;
     opacity: .8;
     transition: 300ms ease all;
 }
 .categorias_blog .cat_blog.historia:hover::before{
-    background: #F30B2C;
+    background: var(--cat-historia);
     mix-blend-mode: normal;
     opacity: .8;
     transition: 300ms ease all;
@@ -525,8 +535,134 @@ section.section_blog{
 
 
 
+/* COLORES DE LAS CATEGORÍAS */
 
-
+.categoria_entrada.color_cultura{
+    background: var(--cat-cultura);
+}
+.categoria_entrada.color_arte{
+    background: var(--cat-arte);
+}
+.categoria_entrada.color_costumbres{
+    background: var(--cat-costumbres);
+}
+.categoria_entrada.color_gastronimia{
+    background: var(--cat-gastronimia);
+}
+.categoria_entrada.color_historia{
+        background: var(--cat-historia);
+}
+.categoria_entrada.color_literatura{
+    background: var(--cat-literatura);
+}
+.entradas_novedades{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 264px;
+    gap: 30px;
+    padding: 30px 0 0;
+}
+.entrada_nota{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 300ms ease all;
+}
+.entrada_nota picture{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+.entrada_nota picture::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 62.5%, rgba(0, 0, 0, 0.76) 100%);
+    background-blend-mode: multiply, normal;
+    z-index: 1;
+    transition: 300ms ease all;
+}
+.entrada_nota .bg_img_nota{
+    width: 100%;
+    transition: 300ms ease all;
+}
+.entrada_nota .categoria_entrada{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: fit-content;
+    color: var(--txt-color-pri);
+    padding: 4px 14px;
+    border-radius: 3px;
+    z-index: 2;
+}
+.entrada_nota .tit_entrada{
+    color: var(--txt-color-pri);
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+.entrada_nota .cont_info_entrada{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    margin-bottom: -120px;
+    transition: 300ms ease all;
+}
+.entrada_nota .cont_info_entrada .txt_entrada{
+    color: var(--txt-color-pri);
+    margin: 10px 0;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    -o-line-clamp: 3;
+    -ms-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.entrada_nota .cont_info_entrada .dates_entrada{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0 0;
+    box-sizing: border-box;
+    border-top: 1px solid #FFF;
+}
+.dates_entrada .date_info1, .dates_entrada .date_info2{
+    color: var(--txt-color-pri);
+    margin-right: 20px;
+}
+.entrada_nota .cont_info_entrada .dates_entrada span{
+    color: var(--txt-color-pri);
+    margin-right: 10px;
+}
+.entrada_nota:hover .bg_img_nota{
+    transform: scale(1.05);
+    filter: blur(100);
+    backdrop-filter: blur(100);
+}
+.entrada_nota:hover picture::before{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.76) 100%);
+    transition: 300ms ease all;
+}
+.entrada_nota:hover .cont_info_entrada{
+    display: block;
+    opacity: 1;
+    transition: 300ms ease all;
+    margin-bottom: 0;
+}
 
 
 /* FOOTER */
