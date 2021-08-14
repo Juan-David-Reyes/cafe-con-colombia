@@ -12,8 +12,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- BTN BOLETIN FIJO -->
+
+    <div class="btn_boletin_fixed">
+        <span> <img width="19" height="17" src="images/diseno/icon_newsltter.svg" alt=""> </span>
+        <div class="txt_btn_boltin">
+            Boletín
+        </div>
+    </div>
+
+    <!-- MODAL BOLETIN -->
+
+    <div class="modal_boletin">
+        <span class="bg_modal_color"></span>
+        <div class="cont_modal_boletin">
+            <span class="fas fa-times"></span>
+            <picture>
+                <img src="images/diseno/03-nota/subs_img.svg" alt="">
+            </picture>
+            <div class="cont_txt_tit">
+                Suscríbete a nuestro Boletín
+            </div>
+            <div class="cont_txt_desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos earum at consequuntur est asperiores tempora optio, natus fuga harum quod.
+            </div>
+            <form action="" class="form_modal_boletin">
+                <div class="cont_input_modal_boletin">
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="cont_input_modal_boletin">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="btn_modal_boletin">
+                    <button type="submit" class="subs_btn">ENVIAR</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ************************ -->
     
     <header>
+
+        
+
         <div class="cont_central">
             <nav class="navbar_DV">
                 <ul class="first_nav">
@@ -47,7 +91,7 @@
                     <a href="">
                         <img width="118" height="57" src="./images/diseno/logo_cafe_con_colombia_mv.svg" alt="">
                     </a>
-                </h1> 
+                </h1>
                 <ul>
                     <li>
                         <a class="search">
@@ -76,6 +120,12 @@
                         <li> <a href="">Literatura</a> </li>
                     </ul>
                 </nav>
+                <div class="btn_menu_mobile_newsletter">
+                    <picture>
+                        <img src="./images/diseno/icon_newsltter.svg" alt="">
+                    </picture>
+                    <div class="mobile_newsletter_txt">Boletín</div>
+                </div>
             </div>
         </div>
     </header>
@@ -85,110 +135,113 @@
             <!-- Swiper -->
             <div class="swiper-container Swiper_blog_hero">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <picture>
-                        <img width="1920" height="620px" src="./images/diseno/01-blog/header_.jpg" alt="">
-                    </picture>
-                    <div class="contenido_header_hero">
-                        <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            Cultura
-                        </h2>
-                        <div class="subtitle hero_desc" data-swiper-parallax="-300" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur! maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur!
-                        </div>
-                        <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            <div class="date_info1">
-                                <span class="fas fa-calendar"></span>Julio 27, 2021
+                    <div class="swiper-slide">
+                        <picture>
+                            <img width="1920" height="620px" src="./images/diseno/01-blog/header_.jpg" alt="">
+                        </picture>
+                        <div class="contenido_header_hero">
+                            <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                    Cultura           
+                            </h2>
+                            <a href class="subtitle hero_desc" data-swiper-parallax="-300" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur! maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur!
+                            </a>
+                            <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                <div class="date_info1">
+                                    <span class="fas fa-calendar"></span>Julio 27, 2021
+                                </div>
+                                <div class="date_info2">
+                                    <span class="fas fa-clock"></span>10 min
+                                </div>
                             </div>
-                            <div class="date_info2">
-                                <span class="fas fa-clock"></span>10 min
-                            </div>
-                        </div>
 
-                        <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            <a class="red_btn" href="">button</a>
+                            <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                <a class="red_btn" href="">button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img width="1920" height="620px" src="./images/diseno/01-blog/header3.jpg" alt="">
+                        </picture>
+                        <div class="contenido_header_hero">
+                            <h2 class="hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                Costumbres
+                            </h2>
+                            <a href="" class="hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla.
+                            </a>
+                            <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                <div class="date_info1">
+                                    <span class="fas fa-calendar"></span>Enero 14, 2021
+                                </div>
+                                <div class="date_info2">
+                                    <span class="fas fa-clock"></span>15 min
+                                </div>
+                            </div>
+
+                            <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                <a class="red_btn" href="">button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img width="1920" height="620px" src="./images/diseno/01-blog/header2.jpg" alt="">
+                        </picture>
+                        <div class="contenido_header_hero">
+                            <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                Gastronomía
+                            </h2>
+                            <a href="" class="subtitle hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque !
+                            </a>
+                            <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                <div class="date_info1">
+                                    <span class="fas fa-calendar"></span>Abril 23, 2020
+                                </div>
+                                <div class="date_info2">
+                                    <span class="fas fa-clock"></span>21 min
+                                </div>
+                            </div>
+
+                            <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                <a class="red_btn" href="">button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img width="1920" height="620px" src="./images/diseno/01-blog/header_.jpg" alt="">
+                        </picture>
+                        <div class="contenido_header_hero">
+                            <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                Historia
+                            </h2>
+                            <a href="" class="subtitle hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur!
+                            </a>
+                            <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                                <div class="date_info1">
+                                    <span class="fas fa-calendar"></span>Julio 27, 2021
+                                </div>
+                                <div class="date_info2">
+                                    <span class="fas fa-clock"></span>10 min
+                                </div>
+                            </div>
+
+                            <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
+                                <a class="red_btn" href="">button</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <picture>
-                        <img width="1920" height="620px" src="./images/diseno/01-blog/header3.jpg" alt="">
-                    </picture>
-                    <div class="contenido_header_hero">
-                        <h2 class="hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                            Costumbres
-                        </h2>
-                        <div class="hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla.
-                        </div>
-                        <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            <div class="date_info1">
-                                <span class="fas fa-calendar"></span>Enero 14, 2021
-                            </div>
-                            <div class="date_info2">
-                                <span class="fas fa-clock"></span>15 min
-                            </div>
-                        </div>
 
-                        <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            <a class="red_btn" href="">button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-                        <img width="1920" height="620px" src="./images/diseno/01-blog/header2.jpg" alt="">
-                    </picture>
-                    <div class="contenido_header_hero">
-                        <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                            Gastronomía
-                        </h2>
-                        <div class="subtitle hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque !
-                        </div>
-                        <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            <div class="date_info1">
-                                <span class="fas fa-calendar"></span>Abril 23, 2020
-                            </div>
-                            <div class="date_info2">
-                                <span class="fas fa-clock"></span>21 min
-                            </div>
-                        </div>
+                <div class="swiper-pagination"></div>
 
-                        <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            <a class="red_btn" href="">button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-                        <img width="1920" height="620px" src="./images/diseno/01-blog/header_.jpg" alt="">
-                    </picture>
-                    <div class="contenido_header_hero">
-                        <h2 class="title hero_tit" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                            Historia
-                        </h2>
-                        <div class="subtitle hero_desc" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa obcaecati maiores quam nulla hic perspiciatis voluptate itaque dolores quia consectetur!
-                        </div>
-                        <div class="hero_dates" data-swiper-parallax-opacity="0" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
-                            <div class="date_info1">
-                                <span class="fas fa-calendar"></span>Julio 27, 2021
-                            </div>
-                            <div class="date_info2">
-                                <span class="fas fa-clock"></span>10 min
-                            </div>
-                        </div>
-
-                        <div class="hero_cta" data-swiper-parallax="-100" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">
-                            <a class="red_btn" href="">button</a>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                
             </div>
             <div class="hero_cafe">
                 <picture>
@@ -445,7 +498,7 @@
                 </nav>
             </div>
             <div class="cont_legal">
-                © 2021 PAXZU. Todos los derechos reservados, Diseñado y Desarrollado por PAXZU.
+                
                 <a href="#scrollTop" class="scrolltop">
                     <span class="fas fa-arrow-up"></span>
                 </a>

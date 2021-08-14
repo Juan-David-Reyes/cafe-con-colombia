@@ -13,7 +13,51 @@
 </head>
 <body>
     
+    <!-- BTN BOLETIN FIJO -->
+
+    <div class="btn_boletin_fixed">
+        <span> <img width="19" height="17" src="images/diseno/icon_newsltter.svg" alt=""> </span>
+        <div class="txt_btn_boltin">
+            Boletín
+        </div>
+    </div>
+
+    <!-- MODAL BOLETIN -->
+
+    <div class="modal_boletin">
+        <span class="bg_modal_color"></span>
+        <div class="cont_modal_boletin">
+            <span class="fas fa-times"></span>
+            <picture>
+                <img src="images/diseno/03-nota/subs_img.svg" alt="">
+            </picture>
+            <div class="cont_txt_tit">
+                Suscríbete a nuestro Boletín
+            </div>
+            <div class="cont_txt_desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos earum at consequuntur est asperiores tempora optio, natus fuga harum quod.
+            </div>
+            <form action="" class="form_modal_boletin">
+                <div class="cont_input_modal_boletin">
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="cont_input_modal_boletin">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="btn_modal_boletin">
+                    <button type="submit" class="subs_btn">ENVIAR</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ************************ -->
+    
     <header>
+
+        
+
         <div class="cont_central">
             <nav class="navbar_DV">
                 <ul class="first_nav">
@@ -47,7 +91,7 @@
                     <a href="">
                         <img width="118" height="57" src="./images/diseno/logo_cafe_con_colombia_mv.svg" alt="">
                     </a>
-                </h1> 
+                </h1>
                 <ul>
                     <li>
                         <a class="search">
@@ -64,8 +108,24 @@
                     </li>
                 </ul>
             </nav>
-            <div class="cont_menu">
-                asdasdasd
+            <div class="cont_menu_mobile">
+                <span class="close_menu">X</span>
+                <nav class="nav_mobile_items">
+                    <ul>
+                        <li> <a href="">Arte</a> </li>
+                        <li> <a href="">Cultura</a> </li>
+                        <li> <a href="">Costumbres</a> </li>
+                        <li> <a href="">Gastronomía</a> </li>
+                        <li> <a href="">Historia</a> </li>
+                        <li> <a href="">Literatura</a> </li>
+                    </ul>
+                </nav>
+                <div class="btn_menu_mobile_newsletter">
+                    <picture>
+                        <img src="./images/diseno/icon_newsltter.svg" alt="">
+                    </picture>
+                    <div class="mobile_newsletter_txt">Boletín</div>
+                </div>
             </div>
         </div>
     </header>
@@ -75,7 +135,7 @@
         <section class="section_note">
             <div class="main_note">
                 <div class="header_main_note">
-                    <div class="cont_cat_nota">
+                    <div class="cont_cat_nota gastronomia">
                         Gastronomía
                     </div>
                     <h2 class="title_pri_nota">
@@ -85,18 +145,29 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu, purus nisl commodo. Aliquet mauris scelerisque lectus tellus sed hendrerit nec.
                     </div>
                     <div class="info_date_nota">
-    
+                        <div class="fecha">
+                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                        </div>
+                        <div class="author">
+                            <span class="fas fa-user"></span>Juan David Reyes
+                        </div>
+                        <div class="icon_redes">
+                            <a href=""><span class="fab fa-facebook-f"></span> </a>
+                            <a href=""><span class="fab fa-twitter"></span> </a>
+                            <a href=""><span class="fab fa-linkedin"></span> </a>
+                            <a href=""><span class="fab fa-whatsapp"></span> </a>
+                        </div>
                     </div>
                     <picture class="img_pri_nota">
-                        <img src="" alt="">
+                        <img src="./images/diseno/03-nota/img_nota.jpg" alt="">
                     </picture>
                 </div>
                 <div class="body_main_note">
-                    <h2> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, porro! </h2>
+                    <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, porro! </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae incidunt mollitia facilis sunt. Dolore veniam ab officiis, aperiam porro libero deserunt est consectetur magnam tempore adipisci delectus ullam fugit.</p>
                     <h3> Lorem ipsum dolor sit amet.</h3>
                     <div class="cont_horizontal_ads">
-                        <img width="630" height="114" src="" alt="">
+                        <img width="630" height="114" src="./images/diseno/03-nota/ads_horizontal.png" alt="">
                     </div>
                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, architecto explicabo ducimus, inventore officiis repudiandae dolorem quibusdam nesciunt deleniti quasi est placeat recusandae excepturi aliquam reprehenderit eligendi accusamus magni. Temporibus!</p>
@@ -108,14 +179,72 @@
             <aside>
                 <div class="cont_categ_rel_notas">
                     <div class="categoria_notas">
-                        <a href="" class="cat_notas_recientes"></a>
-                        <a href="" class="cat_notas_leidas"></a>
+                        <a class="cat_notas_recientes cat_activa" data-categoriaAside="recientes">Más reciente</a>
+                        <a class="cat_notas_leidas" data-categoriaAside="leidos">Más leido</a>
                     </div>
-                    <div class="nota_mas_reciente">
+
+                    <div class="nota_mas_reciente active_aside_cat" data-categoriaAside="recientes">
+                        <div class="aside_item_nota">
+                            <picture>
+                                <img width="71" height="71" src="./images/diseno/03-nota/aside_nota.png" alt="">
+                            </picture>
+                            <div class="txt_desc_side">
+                                <a href="" class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae aliquid maxime!
+                                </a>
+                                <a class="ver_aside" href="">Ver màs</a>
+                            </div>
+                        </div>
+                        <div class="aside_item_nota">
+                            <picture>
+                                <img width="71" height="71" src="./images/diseno/03-nota/aside_nota.png" alt="">
+                            </picture>
+                            <div class="txt_desc_side">
+                                <a href="" class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae aliquid maxime!
+                                </a>
+                                <a class="ver_aside" href="">Ver màs</a>
+                            </div>
+                        </div>
+                        <div class="aside_item_nota">
+                            <picture>
+                                <img width="71" height="71" src="./images/diseno/03-nota/aside_nota.png" alt="">
+                            </picture>
+                            <div class="txt_desc_side">
+                                <a href="" class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae aliquid maxime!
+                                </a>
+                                <a class="ver_aside" href="">Ver màs</a>
+                            </div>
+                        </div>
+
 
                     </div>
-                    <div class="nota_mas_leida">
 
+                    <div class="nota_mas_reciente" data-categoriaAside="leidos">
+                        <div class="aside_item_nota">
+                            <picture>
+                                <img width="71" height="71" src="./images/diseno/03-nota/aside_nota.png" alt="">
+                            </picture>
+                            <div class="txt_desc_side">
+                                <a href="" class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae aliquid maxime!
+                                </a>
+                                <a class="ver_aside" href="">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="aside_item_nota">
+                            <picture>
+                                <img width="71" height="71" src="./images/diseno/03-nota/aside_nota.png" alt="">
+                            </picture>
+                            <div class="txt_desc_side">
+                                <a href="" class="">
+                                    Lorem ipsum dolor sit amet consectetur sicing elit. Eveniet molestiae aliquid maxime!
+                                </a>
+                                <a class="ver_aside" href="">Ver más</a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="ads_aside">
@@ -126,10 +255,207 @@
                 </div>
             </aside>
         </section>
-        <section class="not_relacionadas">
-            <h3 class="titulos_section">Novedades</h3>
-            <div class="cont_notas_relacionadas">
 
+        <div class="cont_central">
+            
+            <section class="cont_next_prev_nota">
+                
+                    <a href="" class="not_anterior">
+                        <span>Anterior</span>
+                        <div class="txt_not_anterior">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, omnis!
+                        </div>
+                    </a>
+                    <a href="" class="not_siguiente">
+                        <span>Siguiente</span>
+                        <div class="txt_not_anterior">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, omnis!
+                        </div>
+                    </a>   
+            </section>
+
+        </div>
+
+
+        <section class="not_relacionadas">
+            <h3 class="titulos_section">Notas Relacionadas</h3>
+            <div class="cont_notas_relacionadas">
+                <!-- Swiper -->
+                <div class="swiper-container swiperRelacionadas">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="" class="entrada_nota">
+                                <div class="categoria_entrada color_cultura">Cultura</div>
+                                <h4 class="tit_entrada">Los productos más exportados de colombia </h4>
+                                <div class="cont_info_entrada">
+                                    <div class="txt_entrada">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper aliquam elementum nunc, tristique proin vehicula nullaullamcorper aliquam elementum nunc, tristique proin vehicula nulla
+                                    </div>
+                                    <div class="dates_entrada">
+                                        <div class="date_info1">
+                                            <span class="fas fa-calendar"></span>Julio 27, 2021
+                                        </div>
+                                        <div class="date_info2">
+                                            <span class="fas fa-clock"></span>10 min
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img class="bg_img_nota" width="335" height="264" src="./images/diseno/01-blog/ent_1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="section_subscribe">
+            <div class="cont_central">
+                <div class="cont_gen_subscribe">
+                    <picture>
+                        <img width="250" height="138" src="images/diseno/03-nota/subs_img.svg" alt="">
+                    </picture>
+                    <div class="subs_field">
+                        <h2>Suscríbete a nuestro boletín</h2>
+                        <div class="txt_desc_subs">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis voluptates architecto doloremque, dolores soluta?
+                        </div>
+                        <form action="" class="form_subscribe">
+                            <div class="cont_input">
+                                <input id="1" type="text" value="" class="input_subs" placeholder="Nombre">
+
+                            </div>
+                            <div class="cont_input">
+                                <input id="2" type="email" value="" class="input_subs" placeholder="Correo">
+
+                            </div>
+                            <div class="cont_input_button">
+                                <button class="subs_btn" type="submit">ENVIAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -161,7 +487,7 @@
                 </nav>
             </div>
             <div class="cont_legal">
-                © 2021 PAXZU. Todos los derechos reservados, Diseñado y Desarrollado por PAXZU.
+                
                 <a href="#scrollTop" class="scrolltop">
                     <span class="fas fa-arrow-up"></span>
                 </a>
