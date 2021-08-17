@@ -1883,7 +1883,7 @@ form.form_subscribe .cont_input input::placeholder {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  mix-height: 440px;
+  min-height: 440px;
   -webkit-box-shadow: 26px 22px 40px -32px #3179E4, -23px 19px 40px -32px #1A509E;
           box-shadow: 26px 22px 40px -32px #3179E4, -23px 19px 40px -32px #1A509E;
 }

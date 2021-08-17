@@ -1298,9 +1298,6 @@ nav.navbar_MV ul .bars_menu span{
     object-fit: contain;
     display: block;
 }
-.subs_field{
-
-}
 .subs_field h2{
     color:var(--txt-color-sec);
     font-size: 30px;
@@ -1449,7 +1446,7 @@ form.form_subscribe .cont_input input::placeholder{
     border-radius: 10px;
     z-index: 2;
     height: min-content;
-    mix-height: 440px;
+    min-height: 440px;
     box-shadow: 26px 22px 40px -32px #3179E4, -23px 19px 40px -32px #1A509E;
 }
 .modal_boletin .cont_modal_boletin > span{
