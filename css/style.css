@@ -1466,6 +1466,7 @@ nav.navbar_MV ul .bars_menu span {
   -webkit-box-shadow: 0px -3px 45px rgba(0, 0, 0, 0.13);
           box-shadow: 0px -3px 45px rgba(0, 0, 0, 0.13);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .cont_notas_relacionadas .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
